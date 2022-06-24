@@ -1,0 +1,79 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# backup file
+*.bak
+
+# SourceInsignt
+*.IAB
+*.IAD
+*.IMB
+*.IMD
+*.PFI
+*.PO
+*.PR
+*.PRI
+*.PS
+*.SearchResults
+*.WK3
+
+# vscode
+.vscode/settings.json
+
+# keil
+*.uvgui.*
+*.uvguix.*
+Listings/
+Objects/
+
+# ZET project file
+APP/TABLE
+TABLE/
+!LIB/*
+!PRJ/*
+BIN/
+Compilelog*.txt
+
+# W308 project file
+!CVWL518.lib
