@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +45,7 @@
 
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
-
+osThreadId ledTaskHandle;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -119,6 +119,8 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  osThreadDef(taskled, task_led, osPriorityNormal, 0, 128);
+  ledTaskHandle = osThreadCreate(osThread(taskled), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* Start scheduler */
