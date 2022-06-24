@@ -66,6 +66,14 @@
 *.uvguix.*
 Listings/
 Objects/
+*.lst
+*.crf
+*.htm
+*.axf
+*.lnp
+*.sct
+*.dep
+JLinkLog.txt
 
 # ZET project file
 APP/TABLE
